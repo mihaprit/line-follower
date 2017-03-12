@@ -1,0 +1,56 @@
+Source,C:/Users/FrediTP/Desktop/GitHub/line-follower/KiCAD/line_follower_design_2/line_follower_design_2.sch
+Kicad Rev,Eeschema 4.0.5
+Generated Date,12.3.2017 9:24:38
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+qC1,Arduino Micro,arduinomicro,ArduinoMicro
+M1,Motor Levi,motorlevi,MotorLevi
+DRV1,L293,L293,L293
+C1,CM1,device,C_Small
+C2,CM2,device,C_Small
+M2,Motor Desni,motordesni,MotorDesni
+BAT1,Baterija,device,Battery_Cell
+S1,QRE1113,QRE1113,QRE1113
+U1,MCP1703A-5002/MB,regul,MCP1703A-5002/MB
+S2,QRE1113,QRE1113,QRE1113
+S3,QRE1113,QRE1113,QRE1113
+BT1,RN42,rn42,RN42
+SW1,switch,switch,switch
+C5,22uF,device,CP1_Small
+R17,10K,device,R
+Q4,Q_PMOS_GDS,device,Q_PMOS_GDS
+R18,10K,device,R
+R19,10K,device,R
+SW2,switch_psh,switch,switch_psh
+R16,10K,device,R
+Q1,Q_NPN_BCE,device,Q_NPN_BCE
+R1,10,device,R
+R3,10K,device,R
+R4,10K,device,R
+C3,C_in,device,C_Small
+C4,C_out,device,C_Small
+R5,10K,device,R
+R2,1K,device,R
+S4,QRE1113,QRE1113,QRE1113
+S5,QRE1113,QRE1113,QRE1113
+S6,QRE1113,QRE1113,QRE1113
+Q2,Q_NPN_BCE,device,Q_NPN_BCE
+R6,10,device,R
+R8,10K,device,R
+R9,10K,device,R
+R10,10K,device,R
+R7,1K,device,R
+S7,QRE1113,QRE1113,QRE1113
+S8,QRE1113,QRE1113,QRE1113
+S9,QRE1113,QRE1113,QRE1113
+Q3,Q_NPN_BCE,device,Q_NPN_BCE
+R11,10,device,R
+R13,10K,device,R
+R14,10K,device,R
+R15,10K,device,R
+R12,1K,device,R

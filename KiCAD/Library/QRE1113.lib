@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# QRE1113
+#
+DEF QRE1113 S 0 40 Y Y 1 F N
+F0 "S" -550 850 60 H V C CNN
+F1 "QRE1113" -550 300 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "https://www.sparkfun.com/datasheets/Robotics/QR_QRE1113.GR.pdf" -600 1000 60 H I C CNN
+DRAW
+S -700 750 -350 400 0 1 0 f
+X AN 1 -900 700 200 R 50 50 1 1 I
+X CAT 2 -900 450 200 R 50 50 1 1 I
+X COL 3 -150 700 200 L 50 50 1 1 I
+X EM 4 -150 450 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
