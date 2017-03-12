@@ -7,7 +7,7 @@ DEF ArduinoMicro qC 0 40 Y Y 1 F N
 F0 "qC" 1000 2300 60 H V C CNN
 F1 "ArduinoMicro" 1050 400 60 H V C CNN
 F2 "" 950 1300 60 H I C CNN
-F3 "" 950 1300 60 H I C CNN
+F3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/ATMega32U4.pdf" 1950 2550 60 H I C CNN
 DRAW
 S 600 500 1450 2200 0 1 0 f
 X MOSI 1 400 2150 200 R 50 50 1 1 I
