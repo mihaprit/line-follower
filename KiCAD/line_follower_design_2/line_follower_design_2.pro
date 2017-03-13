@@ -1,4 +1,4 @@
-update=11.3.2017 16:49:09
+update=13.3.2017 10:43:36
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,4 +66,3 @@ LibName34=C:/Users/FrediTP/Desktop/GitHub/line-follower/KiCAD/Library/motorlevi
 LibName35=C:/Users/FrediTP/Desktop/GitHub/line-follower/KiCAD/Library/QRE1113
 LibName36=C:/Users/FrediTP/Desktop/GitHub/line-follower/KiCAD/Library/rn42
 LibName37=C:/Users/FrediTP/Desktop/GitHub/line-follower/KiCAD/Library/switch
-LibName38=switch_psh

@@ -1,4 +1,4 @@
-update=6.3.2017 14:09:18
+update=13.3.2017 10:41:32
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/Users/FrediTP/Desktop/GitHub/line-follower/KiCAD/line_follower_design_1
+LibDir=../Library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,8 +59,8 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=arduinomicro
-LibName31=L293
-LibName32=JY-MCU
+LibName31=JY-MCU
+LibName32=L293
 LibName33=motordesni
 LibName34=motorlevi
 LibName35=QRE1113
