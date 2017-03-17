@@ -28,7 +28,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:line_follower_design_2-cache
+LIBS:arduinomicro
+LIBS:JY-MCU
+LIBS:L293
+LIBS:motordesni
+LIBS:motorlevi
+LIBS:QRE1113
+LIBS:rn42
+LIBS:switch
+LIBS:line_follower_design_3-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268

@@ -1089,7 +1089,7 @@ Text Notes 750  2550 0    60   ~ 0
 Text Notes 650  750  0    120  ~ 24
 LINE-FOLLOWER ROBOT\n
 Text Notes 700  900  0    60   ~ 0
-design. 2
+design. 3
 Text Notes 1950 3200 0    60   ~ 0
 5V, 250mA max
 Entry Bus Bus
@@ -1757,7 +1757,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 3400 6750 3400
 Wire Wire Line
-	4450 3600 5000 3600
+	4400 3600 5000 3600
 Wire Wire Line
 	3550 2800 4350 2800
 Wire Wire Line
@@ -1819,4 +1819,12 @@ Wire Wire Line
 	6250 6100 6250 3400
 Text Notes 1950 1150 0    60   ~ 0
 2 x NMOS BSS138\n
+Wire Wire Line
+	4400 3600 4400 3400
+Entry Wire Line
+	4400 3400 4500 3300
+Text Label 6500 5150 0    60   ~ 0
+BTRX
+Text Label 6500 6100 0    60   ~ 0
+BTTX
 $EndSCHEMATC
