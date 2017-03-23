@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ArduinoMicro)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\ArduinoMicro.pretty)(options "")(descr "Arduino Micro footprint"))
+)
