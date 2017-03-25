@@ -1,3 +1,8 @@
 (fp_lib_table
   (lib (name ArduinoMicro)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\ArduinoMicro.pretty)(options "")(descr "Arduino Micro footprint"))
+  (lib (name HPCBMotor)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\HPCBMotor.pretty)(options "")(descr ""))
+  (lib (name L293D)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\L293D.pretty)(options "")(descr ""))
+  (lib (name RN42)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\RN42.pretty)(options "")(descr ""))
+  (lib (name QRE1113)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\QRE1113.pretty)(options "")(descr ""))
+  (lib (name 9VBattery_holder)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\9VBattery_holder.pretty)(options "")(descr ""))
 )
