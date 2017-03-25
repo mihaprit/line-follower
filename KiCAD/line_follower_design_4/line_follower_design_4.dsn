@@ -21,9 +21,13 @@
       )
     )
     (boundary
-      (rect pcb -122570 -50150 -14005 -152532)
+      (rect pcb -122370 -50350 -13470 -152500)
     )
-    (keepout "" (polygon F.Cu 0  -20320 -152400  -121920 -152400  -121920 -53340  -20320 -53340))
+    (keepout "" (polygon F.Cu 0  -37592 -75184  -20320 -75184  -20320 -85852  -38100 -85852
+            -38100 -75184  -37592 -75184))
+    (keepout "" (polygon F.Cu 0  -20320 -68580  -50800 -68580  -50800 -55880  -20320 -55880))
+    (keepout "" (polygon F.Cu 0  -91440 -68580  -121920 -68580  -121920 -55880  -91440 -55880))
+    (keepout "" (polygon F.Cu 0  -46228 -128524  -93980 -128524  -93980 -117856  -46228 -117856))
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
@@ -33,11 +37,12 @@
     )
   )
   (placement
+    (component "HPCBMotor:HPCB Motor (Pololu)"
+      (place M2 -20320 -50800 front 180 (PN "Motor Desni"))
+      (place M1 -121920 -73660 front 0 (PN "Motor Levi"))
+    )
     (component "9VBattery_holder:12BH611-GR"
       (place BAT1 -58420 -109220 front 90 (PN Baterija))
-    )
-    (component RF_Modules:RN42
-      (place BT1 -30480 -81280 front 270 (PN RN42))
     )
     (component Capacitors_SMD:C_0603_HandSoldering
       (place C1 -109220 -88900 front 0 (PN 1uF))
@@ -51,10 +56,6 @@
     )
     (component L293D:L293D
       (place DRV1 -93980 -83820 front 90 (PN L293))
-    )
-    (component "HPCBMotor:HPCB Motor (Pololu)"
-      (place M1 -121920 -73660 front 0 (PN "Motor Levi"))
-      (place M2 -20320 -50800 front 180 (PN "Motor Desni"))
     )
     (component "Transistors_OldSowjetAera:OldSowjetaera_Transistor_Type-I_SmallPads"
       (place Q1 -27940 -121920 front 0 (PN Q_NPN_BCE))
@@ -82,7 +83,7 @@
       (place R10 -45720 -139700 front 0 (PN 10))
       (place R11 -40640 -129540 front 90 (PN 10K))
       (place R12 -35560 -134620 front 90 (PN 10K))
-      (place R13 -25400 -142240 front 0 (PN 10K))
+      (place R13 -26416 -143764 front 0 (PN 10K))
       (place R14 -96520 -116840 front 270 (PN 470R))
       (place R15 -43180 -109220 front 0 (PN R10K))
       (place R16 -50800 -109220 front 180 (PN R10K))
@@ -94,15 +95,15 @@
       (place R22 -96520 -124460 front 90 (PN 10K))
     )
     (component QRE1113:QRE1113
-      (place S1 -111760 -137160 front 0 (PN QRE1113))
-      (place S2 -104140 -144780 front 0 (PN QRE1113))
-      (place S3 -93980 -149860 front 0 (PN QRE1113))
-      (place S4 -83820 -149860 front 0 (PN QRE1113))
-      (place S5 -73660 -149860 front 0 (PN QRE1113))
-      (place S6 -60960 -149860 front 0 (PN QRE1113))
-      (place S7 -48260 -149860 front 0 (PN QRE1113))
-      (place S8 -38100 -144780 front 0 (PN QRE1113))
-      (place S9 -30480 -137160 front 0 (PN QRE1113))
+      (place S1 -111760 -137160 back 180 (PN QRE1113))
+      (place S2 -104140 -144780 back 180 (PN QRE1113))
+      (place S3 -93980 -146050 back 180 (PN QRE1113))
+      (place S4 -83820 -146050 back 180 (PN QRE1113))
+      (place S5 -72644 -146304 back 180 (PN QRE1113))
+      (place S6 -60960 -146050 back 180 (PN QRE1113))
+      (place S7 -48260 -146050 back 180 (PN QRE1113))
+      (place S8 -38100 -142240 back 180 (PN QRE1113))
+      (place S9 -30480 -134620 back 180 (PN QRE1113))
     )
     (component Buttons_Switches_SMD:SW_SPST_EVQP0
       (place SW1 -30480 -96520 front 0 (PN switch_psh))
@@ -111,10 +112,25 @@
       (place SW2 -116840 -106680 front 0 (PN switch))
     )
     (component "TO_SOT_Packages_SMD:SOT89-3_Housing"
-      (place U1 -104140 -91440 front 0 (PN "MCP1703A-5002/MB"))
+      (place U1 -101600 -90170 front 0 (PN "MCP1703A-5002/MB"))
+    )
+    (component RN42:rn42footprint
+      (place BT1 -39370 -73660 front 270 (PN RN42))
     )
   )
   (library
+    (image "HPCBMotor:HPCB Motor (Pololu)"
+      (outline (path signal 150  0 5080  30480 5080))
+      (outline (path signal 150  30480 5080  30480 17780))
+      (outline (path signal 150  30480 17780  0 17780))
+      (outline (path signal 150  0 17780  0 5080))
+      (pin Round[T]Pad_1524_um 1 31750 17780)
+      (pin Round[T]Pad_1524_um 2 31750 15240)
+      (pin Round[T]Pad_1524_um 3 31750 12700)
+      (pin Round[T]Pad_1524_um 4 31750 10160)
+      (pin Round[T]Pad_1524_um 5 31750 7620)
+      (pin Round[T]Pad_1524_um 6 31750 5080)
+    )
     (image "9VBattery_holder:12BH611-GR"
       (outline (path signal 150  -1778 26416  0 26416))
       (outline (path signal 150  0 26416  46482 26416))
@@ -126,58 +142,6 @@
       (pin Round[A]Pad_1524_um @1 0 22098)
       (pin Round[A]Pad_1524_um @2 28194 22098)
       (pin Round[A]Pad_1524_um @3 13970 0)
-    )
-    (image RF_Modules:RN42
-      (outline (path signal 50  -7650 16050  7650 16050))
-      (outline (path signal 50  7650 16050  7650 -10950))
-      (outline (path signal 50  7650 -10950  -7650 -10950))
-      (outline (path signal 50  -7650 -10950  -7650 16050))
-      (outline (path signal 150  -6800 8900  -4400 8900))
-      (outline (path signal 150  -4400 8900  -4400 10500))
-      (outline (path signal 150  -6800 10500  6800 10500))
-      (outline (path signal 150  -6800 7000  -6800 15800))
-      (outline (path signal 150  -6800 15800  6800 15800))
-      (outline (path signal 150  6800 15800  6800 7000))
-      (outline (path signal 150  4700 -10100  6800 -10100))
-      (outline (path signal 150  6800 -10100  6800 -8000))
-      (outline (path signal 150  -4700 -10100  -6800 -10100))
-      (outline (path signal 150  -6800 -10100  -6800 -8000))
-      (pin Oval[T]Pad_2000x800_um 1 -6400 6000)
-      (pin Oval[T]Pad_2000x800_um 2 -6400 4800)
-      (pin Oval[T]Pad_2000x800_um 3 -6400 3600)
-      (pin Oval[T]Pad_2000x800_um 4 -6400 2400)
-      (pin Oval[T]Pad_2000x800_um 5 -6400 1200)
-      (pin Oval[T]Pad_2000x800_um 6 -6400 0)
-      (pin Oval[T]Pad_2000x800_um 7 -6400 -1200)
-      (pin Oval[T]Pad_2000x800_um 8 -6400 -2400)
-      (pin Oval[T]Pad_2000x800_um 9 -6400 -3600)
-      (pin Oval[T]Pad_2000x800_um 10 -6400 -4800)
-      (pin Oval[T]Pad_2000x800_um 11 -6400 -6000)
-      (pin Oval[T]Pad_2000x800_um 12 -6400 -7200)
-      (pin Oval[T]Pad_2000x800_um (rotate 90) 35 -4100 -9700)
-      (pin Oval[T]Pad_2000x800_um (rotate 90) 29 -3100 -9700)
-      (pin Oval[T]Pad_2000x800_um (rotate 90) 34 -1800 -9700)
-      (pin Oval[T]Pad_2000x800_um (rotate 90) 33 -600 -9700)
-      (pin Oval[T]Pad_2000x800_um (rotate 90) 32 600 -9700)
-      (pin Oval[T]Pad_2000x800_um (rotate 90) 31 1800 -9700)
-      (pin Oval[T]Pad_2000x800_um (rotate 90) 28 3100 -9700)
-      (pin Oval[T]Pad_2000x800_um (rotate 90) 30 4100 -9700)
-      (pin Oval[T]Pad_2000x800_um 13 6400 -7200)
-      (pin Oval[T]Pad_2000x800_um 14 6400 -6000)
-      (pin Oval[T]Pad_2000x800_um 15 6400 -4800)
-      (pin Oval[T]Pad_2000x800_um 16 6400 -3600)
-      (pin Oval[T]Pad_2000x800_um 17 6400 -2400)
-      (pin Oval[T]Pad_2000x800_um 18 6400 -1200)
-      (pin Oval[T]Pad_2000x800_um 19 6400 0)
-      (pin Oval[T]Pad_2000x800_um 20 6400 1200)
-      (pin Oval[T]Pad_2000x800_um 21 6400 2400)
-      (pin Oval[T]Pad_2000x800_um 22 6400 3600)
-      (pin Oval[T]Pad_2000x800_um 23 6400 4800)
-      (pin Oval[T]Pad_2000x800_um 24 6400 6000)
-      (pin Rect[T]Pad_1800x1000_um 36 -5600 -9300)
-      (pin Rect[T]Pad_1800x1000_um 36@1 5600 -9300)
-      (pin Rect[T]Pad_1800x1000_um 36@2 5600 9700)
-      (pin Rect[T]Pad_1800x1000_um 36@3 -5600 9700)
     )
     (image Capacitors_SMD:C_0603_HandSoldering
       (outline (path signal 100  -800 -400  -800 400))
@@ -252,18 +216,6 @@
       (pin Rect[T]Pad_400x1200_um 14 8382 -762)
       (pin Rect[T]Pad_400x1200_um 15 9652 -762)
       (pin Rect[T]Pad_400x1200_um 16 10922 -762)
-    )
-    (image "HPCBMotor:HPCB Motor (Pololu)"
-      (outline (path signal 150  0 5080  30480 5080))
-      (outline (path signal 150  30480 5080  30480 17780))
-      (outline (path signal 150  30480 17780  0 17780))
-      (outline (path signal 150  0 17780  0 5080))
-      (pin Round[T]Pad_1524_um 1 31750 17780)
-      (pin Round[T]Pad_1524_um 2 31750 15240)
-      (pin Round[T]Pad_1524_um 3 31750 12700)
-      (pin Round[T]Pad_1524_um 4 31750 10160)
-      (pin Round[T]Pad_1524_um 5 31750 7620)
-      (pin Round[T]Pad_1524_um 6 31750 5080)
     )
     (image "Transistors_OldSowjetAera:OldSowjetaera_Transistor_Type-I_SmallPads"
       (outline (path signal 150  -4400 0  -4419.58 -123.607  -4476.39 -235.114  -4564.89 -323.607
@@ -502,8 +454,50 @@
       (pin Rect[T]Pad_1000x1500_um (rotate 270) 1 -1480 1500)
       (pin Rect[T]Pad_1000x1500_um (rotate 270) 2 -1480 0)
       (pin Rect[T]Pad_1000x1500_um (rotate 270) 3 -1480 -1500)
-      (pin Rect[T]Pad_2000x3000_um (rotate 270) 2@1 1480 0)
+      (pin Rect[T]Pad_2000x3000_um (rotate 270) 2@1 1524 0)
       (pin Trapz[T]Pad_1500x750_p0xp500_um (rotate 90) 2@2 -370 0)
+    )
+    (image RN42:rn42footprint
+      (outline (path signal 200  13400 0  11500 0))
+      (outline (path signal 200  13400 0  13400 2100))
+      (outline (path signal 200  0 0  1900 0))
+      (outline (path signal 200  0 0  0 2100))
+      (outline (path signal 200  -1500 18600  14900 18600))
+      (outline (path signal 200  0 16700  0 25600))
+      (outline (path signal 200  0 25600  13400 25600))
+      (outline (path signal 200  13400 25600  13400 16700))
+      (pin Rect[T]Pad_1300x800_um 13 13400 2800)
+      (pin Rect[T]Pad_1300x800_um 14 13400 4000)
+      (pin Rect[T]Pad_1300x800_um 15 13400 5200)
+      (pin Rect[T]Pad_1300x800_um 16 13400 6400)
+      (pin Rect[T]Pad_1300x800_um 17 13400 7600)
+      (pin Rect[T]Pad_1300x800_um 18 13400 8800)
+      (pin Rect[T]Pad_1300x800_um 19 13400 10000)
+      (pin Rect[T]Pad_1300x800_um 20 13400 11200)
+      (pin Rect[T]Pad_1300x800_um 21 13400 12400)
+      (pin Rect[T]Pad_1300x800_um 22 13400 13600)
+      (pin Rect[T]Pad_1300x800_um 23 13400 14800)
+      (pin Rect[T]Pad_1300x800_um 24 13400 16000)
+      (pin Rect[T]Pad_1300x800_um 1 0 16000)
+      (pin Rect[T]Pad_1300x800_um 2 0 14800)
+      (pin Rect[T]Pad_1300x800_um 3 0 13600)
+      (pin Rect[T]Pad_1300x800_um 4 0 12400)
+      (pin Rect[T]Pad_1300x800_um 5 0 11200)
+      (pin Rect[T]Pad_1300x800_um 6 0 10000)
+      (pin Rect[T]Pad_1300x800_um 7 0 8800)
+      (pin Rect[T]Pad_1300x800_um 8 0 7600)
+      (pin Rect[T]Pad_1300x800_um 9 0 6400)
+      (pin Rect[T]Pad_1300x800_um 10 0 5200)
+      (pin Rect[T]Pad_1300x800_um 11 0 4000)
+      (pin Rect[T]Pad_1300x800_um 12 0 2800)
+      (pin Rect[T]Pad_800x1300_um 35 2286 0)
+      (pin Rect[T]Pad_800x1300_um 30 11049 0)
+      (pin Rect[T]Pad_800x1300_um 29 3600 0)
+      (pin Rect[T]Pad_800x1300_um 28 9800 0)
+      (pin Rect[T]Pad_800x1300_um 34 4900 0)
+      (pin Rect[T]Pad_800x1300_um 33 6100 0)
+      (pin Rect[T]Pad_800x1300_um 32 7300 0)
+      (pin Rect[T]Pad_800x1300_um 31 8500 0)
     )
     (padstack Round[A]Pad_1200_um
       (shape (circle F.Cu 1200))
@@ -539,10 +533,6 @@
       (shape (path B.Cu 3500  0 0  0 0))
       (attach off)
     )
-    (padstack Oval[T]Pad_2000x800_um
-      (shape (path F.Cu 800  -600 0  600 0))
-      (attach off)
-    )
     (padstack Trapz[T]Pad_1500x750_p0xp500_um
       (shape (polygon F.Cu 0  -1000 -375  -500 375  500 375  1000 -375))
       (attach off)
@@ -567,6 +557,10 @@
       (shape (rect F.Cu -400 -550 400 550))
       (attach off)
     )
+    (padstack Rect[T]Pad_800x1300_um
+      (shape (rect F.Cu -400 -650 400 650))
+      (attach off)
+    )
     (padstack Rect[T]Pad_900x800_um
       (shape (rect F.Cu -450 -400 450 400))
       (attach off)
@@ -588,12 +582,12 @@
       (shape (rect B.Cu -600 -600 600 600))
       (attach off)
     )
-    (padstack Rect[T]Pad_1660x790_um
-      (shape (rect F.Cu -830 -395 830 395))
+    (padstack Rect[T]Pad_1300x800_um
+      (shape (rect F.Cu -650 -400 650 400))
       (attach off)
     )
-    (padstack Rect[T]Pad_1800x1000_um
-      (shape (rect F.Cu -900 -500 900 500))
+    (padstack Rect[T]Pad_1660x790_um
+      (shape (rect F.Cu -830 -395 830 395))
       (attach off)
     )
     (padstack Rect[A]Pad_1800x1800_um
@@ -615,9 +609,9 @@
       (pins BAT1-2 C4-2 SW2-3)
     )
     (net GND
-      (pins BT1-1 BT1-12 BT1-29 BT1-28 C1-2 C2-2 D1-1 DRV1-4 DRV1-5 DRV1-12 DRV1-13
-        M1-6 M2-6 Q1-3 qC1-31 qC1-6 R22-2 S1-4 S2-4 S3-4 S4-4 S5-4 S6-4 S7-4 S8-4
-        S9-4 SW1-2 SW1-2@1 U1-1)
+      (pins M2-6 C1-2 C2-2 D1-1 DRV1-4 DRV1-5 DRV1-12 DRV1-13 M1-6 Q1-3 qC1-31 qC1-6
+        R22-2 S1-4 S2-4 S3-4 S4-4 S5-4 S6-4 S7-4 S8-4 S9-4 SW1-2 SW1-2@1 U1-1 BT1-1
+        BT1-12 BT1-29 BT1-28)
     )
     (net "Net-(BT1-Pad2)"
       (pins BT1-2)
@@ -647,7 +641,7 @@
       (pins BT1-10)
     )
     (net +3V3
-      (pins BT1-11 Q2-1 Q3-1 qC1-19 R18-1 R19-1)
+      (pins Q2-1 Q3-1 qC1-19 R18-1 R19-1 BT1-11)
     )
     (net "Net-(BT1-Pad35)"
       (pins BT1-35)
@@ -668,10 +662,10 @@
       (pins BT1-30)
     )
     (net /BTTX
-      (pins BT1-13 Q2-2 Q3-3 qC1-2 R16-2 R18-2)
+      (pins Q2-2 Q3-3 qC1-2 R16-2 R18-2 BT1-13)
     )
     (net /BTRX
-      (pins BT1-14 Q2-3 qC1-1 R15-2 R19-2)
+      (pins Q2-3 qC1-1 R15-2 R19-2 BT1-14)
     )
     (net "Net-(BT1-Pad15)"
       (pins BT1-15)
@@ -716,16 +710,16 @@
       (pins C3-2 DRV1-6 M1-2)
     )
     (net "Net-(C5-Pad1)"
-      (pins C5-1 DRV1-14 M2-1)
+      (pins M2-1 C5-1 DRV1-14)
     )
     (net "Net-(C5-Pad2)"
-      (pins C5-2 DRV1-11 M2-2)
+      (pins M2-2 C5-2 DRV1-11)
     )
     (net "Net-(D1-Pad2)"
       (pins D1-2 R14-2)
     )
     (net +5V
-      (pins DRV1-1 DRV1-9 DRV1-16 M1-3 M2-3 qC1-29 R2-1 R3-1 R4-1 R7-1 R8-1 R9-1 R11-1
+      (pins M2-3 DRV1-1 DRV1-9 DRV1-16 M1-3 qC1-29 R2-1 R3-1 R4-1 R7-1 R8-1 R9-1 R11-1
         R12-1 R13-1 R15-1 R16-1 R17-1)
     )
     (net /PWML1
@@ -878,8 +872,8 @@
         (use_via Via[0-1]_600:400_um)
       )
       (rule
-        (width 750)
-        (clearance 400.1)
+        (width 500)
+        (clearance 200.1)
       )
     )
   )
