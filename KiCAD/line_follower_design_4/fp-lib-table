@@ -5,4 +5,5 @@
   (lib (name RN42)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\RN42.pretty)(options "")(descr ""))
   (lib (name QRE1113)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\QRE1113.pretty)(options "")(descr ""))
   (lib (name 9VBattery_holder)(type KiCad)(uri C:\Users\FrediTP\Desktop\GitHub\line-follower\KiCAD\Footprints\9VBattery_holder.pretty)(options "")(descr ""))
+  (lib (name "BCE547B(T0-92)")(type KiCad)(uri "C:\\Users\\FrediTP\\Desktop\\GitHub\\line-follower\\KiCAD\\Footprints\\BCE547B(T0-92).pretty")(options "")(descr ""))
 )

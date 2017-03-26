@@ -1003,7 +1003,7 @@ Entry Wire Line
 Entry Bus Bus
 	6000 3400 6100 3300
 Text Notes 700  1050 0    60   ~ 12
-SEZNAM KOMPONENT\n
+SEZNAM KOMPONENT (NI POPOLEN!)\n
 Text Notes 750  1150 0    60   ~ 0
 3 x R10
 Text Notes 700  1350 0    60   ~ 0
